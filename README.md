@@ -5,6 +5,7 @@ This system implements basic login, registration, and user data storage. The sig
 - MySQL
 - Docker
 - CSS
+- JWT
 ## How to run
 ```
 git clone https://github.com/ewum/simple-brazilian-login
