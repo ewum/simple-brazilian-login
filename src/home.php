@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class='container'>
-        <h>Bem vindo, <?=$_SESSION['name']?>!</h>
+        <h>Bem-vindo, <?=$_SESSION['name']?>!</h>
         <form action="logout.php" method="post">
             <button type="submit">sair</button>
         </form>

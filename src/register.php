@@ -7,7 +7,6 @@
         exit;
     }
 
-
     function validate_cpf($cpf) {
         if (strlen($cpf) != 11 || preg_match('/^(\d)\1{10}$/', $cpf)) {
             return false;
