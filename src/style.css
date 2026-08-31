@@ -50,6 +50,47 @@ button {
     cursor: pointer;
 }
 
+button:active {
+    background-color: rgb(156, 94, 0);
+}
+
 a {
     align-self: center;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.field2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.field2 input {
+    flex: 1;
+    margin-left: 1em;
+}
+
+.err {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: red;
+    font-weight: normal;
+    font-size: smaller;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h {
+    font-size: 2.5rem;
 }
