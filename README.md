@@ -11,5 +11,3 @@ cd simple-brazilian-login
 docker compose up -d
 ```
 Access: `https://localhost:8000`
-## Status
-In development.

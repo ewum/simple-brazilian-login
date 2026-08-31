@@ -44,7 +44,7 @@
         return preg_match('/[@]/', $value);
     }
 
-    function is_valid_birthdate($date) {
+    function validate_birthdate($date) {
         $today = date('Y-m-d');
         return $date < $today;
     }
@@ -64,7 +64,7 @@
         if (!has_at($email)) $errors['email'] = 'email inválido';
         if (has_letter($cpf)) $errors['cpf'] = 'cpf não pode conter letras';
         if (has_letter($phone)) $errors['phone'] = 'telefone não pode conter letras';
-        if (!is_valid_birthdate($birth_date)) $errors['birthdate'] = 'data de nascimento inválida';
+        if (!validate_birthdate($birth_date)) $errors['birthdate'] = 'data de nascimento inválida';
         if ($password != $repeatedpassword) $errors['password'] = 'a senhas não coincidem';
         
         $cpf = numbers_only($cpf);
