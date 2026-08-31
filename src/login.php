@@ -16,8 +16,6 @@
         $stmt->execute([$email]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        $invalid_credentials = false;
-
         if ($user && password_verify($password, $user['password_hash'])) {
             $_SESSION['id'] = $user['id'];
             $_SESSION['name'] = $user['name'];
@@ -47,7 +45,7 @@
             <div class="field">
                 <label for="password">senha:</label>
                 <input type="password" id="password" name="password" placeholder="s3nh4" required>
-                <?php if (isset($invalid_credentials) && $invalid_credentials): ?>
+                <?php if (!empty($invalid_credentials)): ?>
                     <p class='err'>email ou senha incorretos</p>
                 <?php endif; ?>
             </div>
