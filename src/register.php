@@ -71,10 +71,8 @@
         $phone = numbers_only($phone);
         $password_hash = password_hash($password, PASSWORD_DEFAULT);
         
-        if (strlen($cpf) !== 11) {
-            $errors['cpf'] = 'isso não é um cpf';
-        } elseif (!validate_cpf($cpf)) {
-            $errors['cpf'] = 'cpf inválido';
+        if (strlen($cpf) !== 11 || !validate_cpf($cpf)) {
+            $errors['cpf'] = 'digite um cpf válido';
         }
 
         if (empty($errors)) {
