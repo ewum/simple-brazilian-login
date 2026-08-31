@@ -35,7 +35,12 @@ input {
     border-radius: 99px;
     outline: none;
     background-color: #252525;
-    box-shadow: 0 0 5px inset #000000;
+    box-shadow: 0 0 5px inset #000000, 0 0 0 2px transparent;
+    transition: box-shadow 1s ease;
+}
+
+input:hover {
+    box-shadow: 0 0 5px inset #000000, 0 0 0 2px #ffffff;
 }
 
 button {
@@ -48,10 +53,15 @@ button {
     background-color: rgb(255, 153, 1);
     font-weight: bolder;
     cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 button:active {
-    background-color: rgb(156, 94, 0);
+    transform: scale(0.95);
 }
 
 a {
