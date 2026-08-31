@@ -102,7 +102,7 @@
         <div class="form2">
             <div class="field2">
                 <label for="name">nome:</label>
-                <input type="text" id="name" name="name" placeholder="Ronaldo" required>
+                <input type="text" id="name" name="name" placeholder="silva" required>
                 <?php if (isset($errors['name'])): ?>
                     <p class='err'><?=$errors['name']?></p>
                 <?php endif; ?>
@@ -123,7 +123,7 @@
             </div>
             <div class="field2">
                 <label for="cpf">cpf:</label>
-                <input type="number" id="cpf" name="cpf" placeholder="123456789-10" required>
+                <input type="number" id="cpf" name="cpf" placeholder="12345678900" required>
                 <?php if (isset($errors['cpf'])): ?>
                     <p class='err'><?=$errors['cpf']?></p>
                 <?php endif; ?>
