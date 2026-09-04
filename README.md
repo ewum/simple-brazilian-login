@@ -11,4 +11,4 @@ git clone https://github.com/ewum/simple-brazilian-login
 cd simple-brazilian-login
 docker compose up -d
 ```
-Access: `https://localhost:8000`
+Access: `http://localhost:8000`
